@@ -1,0 +1,33 @@
+{
+  "name": "@jobgraph/api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc --build",
+    "typecheck": "tsc --noEmit",
+    "dev": "ts-node --project tsconfig.json src/server.ts",
+    "start": "node dist/server.js",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@jobgraph/shared": "*",
+    "@supabase/supabase-js": "^2.43.4",
+    "express": "^4.19.2",
+    "bullmq": "^5.14.0",
+    "ioredis": "^5.4.1",
+    "express-rate-limit": "^7.3.1",
+    "rate-limit-redis": "^4.2.0",
+    "pino": "^9.3.2",
+    "pino-http": "^10.2.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "rimraf": "^5.0.7"
+  }
+}
