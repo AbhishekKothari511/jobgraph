@@ -1,0 +1,29 @@
+{
+  "name": "@jobgraph/worker",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "tsc --build",
+    "typecheck": "tsc --noEmit",
+    "dev": "ts-node --project tsconfig.json src/worker.ts",
+    "start": "node dist/worker.js",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@jobgraph/shared": "*",
+    "@supabase/supabase-js": "^2.43.4",
+    "bullmq": "^5.14.0",
+    "ioredis": "^5.4.1",
+    "openai": "^4.52.0",
+    "dotenv": "^16.4.5",
+    "pino": "^9.3.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "rimraf": "^5.0.7"
+  }
+}
