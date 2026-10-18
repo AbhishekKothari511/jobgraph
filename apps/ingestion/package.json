@@ -1,0 +1,30 @@
+{
+  "name": "@jobgraph/ingestion",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "typecheck": "tsc --noEmit",
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@jobgraph/shared": "*",
+    "@supabase/supabase-js": "^2.43.4",
+    "dotenv": "^16.4.5",
+    "rss-parser": "^3.13.0",
+    "csv-parse": "^5.5.6",
+    "chokidar": "^3.6.0",
+    "node-fetch": "^3.3.2",
+    "pino": "^9.3.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "rimraf": "^5.0.7"
+  }
+}
