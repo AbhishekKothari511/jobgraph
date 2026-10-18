@@ -1,0 +1,35 @@
+# ───── Dependencies ─────
+node_modules/
+.pnp
+.pnp.js
+
+# ───── Build outputs ─────
+dist/
+build/
+*.tsbuildinfo
+
+# ───── Environment ─────
+.env
+.env.local
+.env.*.local
+
+# ───── Logs ─────
+*.log
+logs/
+npm-debug.log*
+
+# ───── OS ─────
+.DS_Store
+Thumbs.db
+
+# ───── CSV drop folder (sample files — tracked as template only) ─────
+apps/ingestion/drop/*.csv
+!apps/ingestion/drop/.gitkeep
+
+# ───── k6 results ─────
+bench/k6-raw/
+
+# ───── IDE ─────
+.vscode/
+.idea/
+*.swp
