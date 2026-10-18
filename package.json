@@ -1,0 +1,18 @@
+{
+  "name": "jobgraph",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test:phase1": "npm run test:phase1 --workspace=scripts"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
