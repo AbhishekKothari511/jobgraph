@@ -1,0 +1,18 @@
+{
+  "name": "@jobgraph/scripts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:phase1": "ts-node --project tsconfig.json src/test-phase1.ts"
+  },
+  "dependencies": {
+    "@jobgraph/shared": "*",
+    "zod": "^3.23.8",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.14.0"
+  }
+}
